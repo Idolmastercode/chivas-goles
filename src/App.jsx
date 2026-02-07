@@ -60,13 +60,22 @@ function App() {
       <h2 style={{ color: '#004D99', marginBottom: '30px' }}>
         🐐 Historial de Goles 2026
       </h2>
-      
-      {/* Mapeamos la lista YA ordenada */}
-      {golesOrdenados.map((gol) => (
-        <GoalCard key={gol.id} data={gol} />
-      ))}
+
+      {/* CONTENEDOR DE TARJETAS */}
+      <div
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: '20px',
+          justifyContent: 'center',
+          width: '100%'
+        }}
+      >
+        {golesOrdenados.map((gol) => (
+          <GoalCard key={gol.id} data={gol} />
+        ))}
+      </div>
     </div>
   );
 }
-
 export default App;

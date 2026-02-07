@@ -102,5 +102,31 @@
     "minuto": "45+5",
     "tipo": "normal",
     "asistio": "Efraín Álvarez"
+  },
+  {
+    "id": 9,
+    "nombre": "Efraín Álvarez",
+    "dorsal": 10,
+    "foto": "/images/efrainalvarez.jpg",
+    "partido": "Mazatlán vs Guadalajara",
+    "estadio": "El Encanto",
+    "competencia": "Liga MX, Clausura",
+    "fecha": "07/02/2026",
+    "minuto": "15",
+    "tipo": "normal",
+    "asistio": null
+  },
+  {
+    "id": 10,
+    "nombre": "Armando González",
+    "dorsal": 34,
+    "foto": "/images/armandogonzalez.jpg",
+    "partido": "Mazatlán vs Guadalajara",
+    "estadio": "El Encanto",
+    "competencia": "Liga MX, Clausura",
+    "fecha": "07/02/2026",
+    "minuto": "29",
+    "tipo": "PENAL",
+    "asistio": null
   }
 ]
