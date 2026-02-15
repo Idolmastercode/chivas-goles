@@ -1,55 +1,77 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
+/* --- RESET BÁSICO --- */
 body {
   margin: 0;
   padding: 0;
-  /* Evita el rebote elástico horizontal en móviles */
-  overflow-x: hidden; 
+  overflow-x: hidden;
+  background-color: #f8f9fa; /* Un gris casi blanco, muy limpio */
+  font-family: 'Segoe UI', system-ui, sans-serif;
 }
 
-/* Contenedor opcional para que las fichas no toquen los bordes del cel */
+/* --- LAYOUT PRINCIPAL (Sticky Footer) --- */
+#root {
+  /* Quitamos el max-width aquí para que header/footer toquen los bordes */
+  width: 100%;
+  min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0; /* Quitamos padding del root original */
+  margin: 0;
+}
+
+/* --- HEADER MINIMALISTA --- */
+.chivas-header {
+  background-color: #E30613; /* Rojo Chivas exacto */
+  color: white;
+  padding: 1.5rem 1rem;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra sutil */
+}
+
+.header-title {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* --- CONTENIDO CENTRADO --- */
+.main-container {
+  flex: 1; /* Esto empuja el footer hacia abajo */
+  width: 100%;
+  max-width: 1280px; /* Aquí limitamos el ancho del contenido */
+  margin: 0 auto;    /* Centramos el contenido */
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* --- TUS ESTILOS PREVIOS --- */
 .goal-card {
-  width: 95% !important; /* Ajusta el ancho para que respire en pantalla chica */
-  max-width: 450px;
+  /* Quitamos el width: 95% que causaba problemas en escritorio */
+  width: 100%; 
+  
+  /* Flex: crecer, encoger, base ideal de 300px */
+  /* Esto permite que quepan más tarjetas (3 o 4) */
+  flex: 1 1 300px; 
+  
+  /* Un máximo más razonable para que no se vean gigantes */
+  max-width: 380px; 
+  
+  /* Mínimo para que no se aplasten en celulares viejos */
+  min-width: 280px;
+}
+
+/* Opcional: Centrar la última tarjeta si queda sola */
+.goal-card:last-child {
+  margin-right: auto; 
+  /* Si prefieres que se quede a la izquierda usa margin-right: auto */
+  /* Si prefieres centrada, quita esta línea */
+}
+
+/* --- FOOTER MINIMALISTA --- */
+.chivas-footer {
+  background-color: #002654; /* Azul Chivas exacto */
+  color: rgba(255, 255, 255, 0.8); /* Blanco un poco suave */
+  padding: 1.5rem;
+  font-size: 0.85rem;
+  width: 100%;
 }

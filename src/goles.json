@@ -128,5 +128,18 @@
     "minuto": "29",
     "tipo": "PENAL",
     "asistio": null
+  },
+  {
+    "id": 11,
+    "nombre": "Armando González",
+    "dorsal": 34,
+    "foto": "/images/armandogonzalez.jpg",
+    "partido": "Guadalajara vs América",
+    "estadio": "Akron",
+    "competencia": "Liga MX, Clausura",
+    "fecha": "14/02/2026",
+    "minuto": "41",
+    "tipo": "normal",
+    "asistio": "Diego Campillo"
   }
 ]

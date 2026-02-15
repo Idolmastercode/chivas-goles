@@ -58,7 +58,7 @@ function App() {
   return (
     <div style={containerStyle}>
       <h2 style={{ color: '#004D99', marginBottom: '30px' }}>
-        🐐 Historial de Goles 2026
+        Historial de Goles 2026
       </h2>
 
       {/* CONTENEDOR DE TARJETAS */}
