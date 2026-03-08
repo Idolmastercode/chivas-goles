@@ -141,5 +141,44 @@
     "minuto": "41",
     "tipo": "normal",
     "asistio": "Diego Campillo"
+  },
+  {
+    "id": 12,
+    "nombre": "Ángel Sepulveda",
+    "dorsal": 20,
+    "foto": "/images/angelsepulveda.jpg",
+    "partido": "Cruz Azul vs Guadalajara",
+    "estadio": "Cuauhtémoc",
+    "competencia": "Liga MX, Clausura",
+    "fecha": "21/02/2026",
+    "minuto": "81",
+    "tipo": "normal",
+    "asistio": "Ricardo Marín"
+  },
+  {
+    "id": 13,
+    "nombre": "Armando González",
+    "dorsal": 34,
+    "foto": "/images/armandogonzalez.jpg",
+    "partido": "Atlas vs Guadalajara",
+    "estadio": "Jalisco",
+    "competencia": "Liga MX, Clausura",
+    "fecha": "07/03/2026",
+    "minuto": "48",
+    "tipo": "normal",
+    "asistio": "Roberto Alvarado"
+  },
+  {
+    "id": 14,
+    "nombre": "Ángel Sepulveda",
+    "dorsal": 20,
+    "foto": "images/angelsepulveda.jpg",
+    "partido": "Atlas vs Guadalajara",
+    "estadio": "Jalisco",
+    "competencia": "Liga MX, Clausura",
+    "fecha": "07/03/2026",
+    "minuto": "84",
+    "tipo": "PENAL",
+    "asistio": null
   }
 ]
