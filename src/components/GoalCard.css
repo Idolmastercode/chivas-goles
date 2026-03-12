@@ -14,7 +14,7 @@
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  border-left: 6px solid #004D99; 
+  border-left: 6px solid #002956; 
   position: relative;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
@@ -44,40 +44,62 @@
   object-fit: cover;
 }
 
-/* El Triángulo con el número (Dorsal) */
-/* Si quieres probar tu idea de inmediato, reemplaza tu .dorsal-tag con esto: */
-/* --- SECCIÓN DE DORSAL (EL TRIÁNGULO PERFECTO) --- */
-
-/* --- SECCIÓN DE DORSAL (EL TRIÁNGULO PERFECTO) --- */
-
 .dorsal-tag {
+
   position: absolute;
+
   top: 0;
+
   right: 0;
+
   /* 1. Lo hacemos un pelín más grande (65px) para asegurar que el "225" respire */
-  width: 55px; 
+
+  width: 55px;
+
   height: 55px;
-  background-color: #CF102D;
+
+  background-color: #002956;
+
   clip-path: polygon(0 0, 100% 0, 100% 100%);
+
   z-index: 10;
+
 }
 
+
+
 .dorsal-tag span {
+
   /* 2. El Truco Mágico: Creamos una "caja segura" invisible en la esquina superior derecha */
+
   position: absolute;
+
   top: 0;
+
   right: 0;
+
   width: 31px;  
-  height: 30px; 
-  
+
+  height: 30px;
+
+ 
+
   /* 3. Centramos el texto dentro de esta caja segura, lejos de la diagonal cortada */
+
   display: flex;
+
   justify-content: center; /* Centra horizontalmente para que el "7" no se vaya a la orilla */
+
   align-items: center;     /* Centra verticalmente */
-  
+
+ 
+
   color: white;
+
   font-weight: 800;
+
   /* 4. Fuente condensada obligatoria para que los 3 números no engorden y choquen */
+
 }
 
 /* --- SECCIÓN DE CONTENIDO --- */
@@ -94,7 +116,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center; /* Alineación vertical perfecta Nombre vs Minuto */
-  border-bottom: 2px solid #CF102D;
+  border-bottom: 2px solid #cd0e2c;
   margin-bottom: 8px;
   padding-bottom: 5px;
 }
@@ -109,7 +131,7 @@
 
 .minute {
   font-weight: 800;
-  color: #CF102D;
+  color: #cd0e2c;
   font-size: 1.3rem;
   line-height: 1;
 }
@@ -144,7 +166,7 @@
   top: 0;
   height: 100%;
   width: 4px;
-  background-color: #CF102D;
+  background-color: #cd0e2c;
 }
 
 /* Ajuste Responsivo para pantallas muy pequeñas (iPhone SE, etc) */

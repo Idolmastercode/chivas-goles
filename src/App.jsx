@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import GoalCard from './components/GoalCard';
 import golesData from './goles.json';
-import './App.css'; // <-- Importamos tu CSS
+import './App.css'; 
 
 // --- FUNCIONES AUXILIARES ---
 const parseFecha = (fechaStr) => {
@@ -21,9 +21,8 @@ const parseMinuto = (minutoStr) => {
 // --- COMPONENTE PRINCIPAL ---
 function App() {
   
-  // Ordenamos y luego agrupamos los goles por partido
+  // LÓGICA INTACTA: Ordenamos y luego agrupamos los goles por partido
   const partidosAgrupados = useMemo(() => {
-    // 1. Ordenar (Tu lógica intacta, está perfecta)
     const golesOrdenados = [...golesData].sort((a, b) => {
       const fechaA = parseFecha(a.fecha);
       const fechaB = parseFecha(b.fecha);
@@ -31,12 +30,10 @@ function App() {
       return parseMinuto(b.minuto) - parseMinuto(a.minuto);
     });
 
-    // 2. Agrupar por partido
     const grupos = [];
     let partidoActualKey = "";
 
     golesOrdenados.forEach((gol) => {
-      // Creamos un identificador único para cada partido
       const llavePartido = `${gol.fecha}-${gol.partido}`;
 
       if (llavePartido !== partidoActualKey) {
@@ -56,33 +53,38 @@ function App() {
   }, []); 
 
   return (
-    <div className="app-container">
-      <h2 className="header-title">
-        Historial de Goles 2026
-      </h2>
+    <div className="App"> {/* 1. Usamos tu contenedor principal global */}
+      
+      {/* 2. ENCABEZADO ESTÁNDAR */}
+      <header className="App-header">
+        <h1>Historial de Goles 2026</h1>
+      </header>
 
-      {/* Contenedor principal de los partidos */}
-      <div className="matches-container">
-        {partidosAgrupados.map((partido, index) => {
-          
-          // Magia de la cebra: Alternamos clases en vez de colores en línea
-          const bgClass = index % 2 === 0 ? 'bg-gris-tenue' : 'bg-blanco-roto';
+      {/* 3. CONTENIDO PRINCIPAL */}
+      <main>
+        <div className="matches-container">
+          {partidosAgrupados.map((partido, index) => {
+            
+            const bgClass = index % 2 === 0 ? 'bg-gris-tenue' : 'bg-blanco-roto';
 
-          return (
-            <div key={partido.id} className={`match-section ${bgClass}`}>
-              
-              {/* Opcional: Un pequeño título discreto del partido para separar visualmente */}
-              {/* <h3 className="match-title">{partido.nombrePartido}</h3> */}
-
-              <div className="cards-wrapper">
-                {partido.goles.map((gol) => (
-                  <GoalCard key={gol.id} data={gol} />
-                ))}
+            return (
+              <div key={partido.id} className={`match-section ${bgClass}`}>
+                <div className="cards-wrapper">
+                  {partido.goles.map((gol) => (
+                    <GoalCard key={gol.id} data={gol} />
+                  ))}
+                </div>
               </div>
-            </div>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
+      </main>
+
+      {/* 4. PIE DE PÁGINA ESTÁNDAR */}
+      <footer className="App-footer">
+        <p>&copy; {new Date().getFullYear()} Idolmastercode – Proyecto Chivas. Todos los derechos reservados.</p>
+      </footer>
+
     </div>
   );
 }

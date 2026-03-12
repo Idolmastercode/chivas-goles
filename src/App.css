@@ -1,46 +1,87 @@
-/* Limpiamos el root para que las franjas ocupen todo el ancho */
-#root {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0; /* Quitamos el padding para que el color toque las orillas */
-  text-align: left;
+/* ==========================================================================
+   1. RESETEO GLOBAL
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-body {
+html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; 
-  background-color: #f5f5f5; /* Fondo general por si acaso */
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', 'Poppins', sans-serif; /* Tu tipografía preferida */
+  background-color: #f5f5f5;
+  color: #333a45;
 }
 
-/* --- CLASES DE LA APP --- */
+#root {
+  width: 100%;
+  max-width: none !important;
+  padding: 0 !important;
+  margin: 0;
+}
 
-.app-container {
+/* ==========================================================================
+   2. ESTRUCTURA BASE (PLANTILLA ESTÁNDAR)
+   ========================================================================== */
+.App {
   display: flex;
   flex-direction: column;
-  align-items: center;
   min-height: 100vh;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #ffffff;
+  background-color: #ffffff; 
 }
 
-.header-title {
-  color: #004D99;
-  margin: 30px 0;
+/* Encabezado */
+.App-header {
+  background: #0a2351; /* Azul Chivas (ejemplo) */
+  color: white;
+  padding: 20px 30px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
 }
 
+.App-header h1 {
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+/* Contenido Principal (Flujo libre de orilla a orilla) */
+main {
+  width: 100%;
+  flex-grow: 1;
+  /* Sin max-width ni padding lateral para que las franjas toquen los bordes */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Pie de página */
+.App-footer {
+  background: #0a2351;
+  color: white;
+  padding: 20px 30px;
+  width: 100%;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   3. ESTILOS ESPECÍFICOS DEL PROYECTO (CHIVAS)
+   ========================================================================== */
 .matches-container {
   width: 100%;
 }
 
-/* Contenedor de cada partido (La franja horizontal) */
+/* Franja de cada partido */
 .match-section {
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  box-sizing: border-box; /* Evita que el padding rompa el 100% del ancho */
 }
 
 /* Colores cebra */
@@ -52,17 +93,14 @@ body {
   background-color: #FAFAFA;
 }
 
-/* 1. El contenedor ahora usa Grid para ser 100% responsivo */
+/* Contenedor Flex de Tarjetas */
 .cards-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Esto empuja TODAS las tarjetas al centro juntas */
-  gap: 30px; /* LA CLAVE: El espacio entre tarjetas SIEMPRE será de 30px, ni más ni menos */
+  justify-content: center;
+  gap: 100px; /* Tu separación elegida */
   width: 100%;
-  margin: 0 auto;
-  gap: 100px; /* Prueba subiéndolo de 30px a 40px o 50px */
 }
-
 
 /* Título opcional del partido */
 .match-title {
