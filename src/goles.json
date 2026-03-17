@@ -286,7 +286,7 @@
     "asistio": "Efraín Álvarez"
   },
     {
-    "id": 22,
+    "id": 23,
     "nombre": "Luis Romo",
     "dorsal": 17,
     "foto": "images/luisromo.jpg",
@@ -299,7 +299,7 @@
     "asistio": null
   },
     {
-    "id": 22,
+    "id": 24,
     "nombre": "Armando González",
     "dorsal": 34,
     "foto": "images/armandogonzalez.jpg",
@@ -312,7 +312,7 @@
     "asistio": null
   },
   {
-    "id": 23,
+    "id": 25,
     "nombre": "Armando González",
     "dorsal": 34,
     "foto": "images/armandogonzalez.jpg",
@@ -325,7 +325,7 @@
     "asistio": "Roberto Alvarado"
   },
   {
-    "id": 24,
+    "id": 26,
     "nombre": "Armando González",
     "dorsal": 34,
     "foto": "images/armandogonzalez.jpg",
@@ -338,7 +338,7 @@
     "asistio": null
   },
   {
-    "id": 25,
+    "id": 27,
     "nombre": "Bryan González",
     "dorsal": 5,
     "foto": "images/bryangonzalez.jpg",
@@ -351,7 +351,7 @@
     "asistio": "Richy Ledezma"
   },
   {
-    "id": 26,
+    "id": 28,
     "nombre": "Armando González",
     "dorsal": 34,
     "foto": "images/armandogonzalez.jpg",
@@ -364,7 +364,7 @@
     "asistio": "Efraín Álvarez"
   },
   {
-    "id": 27,
+    "id": 29,
     "nombre": "Daniel Aguirre",
     "dorsal": 23,
     "foto": "images/danielaguirre.jpg",
@@ -377,7 +377,7 @@
     "asistio": "Bryan González"
   },
     {
-    "id": 27,
+    "id": 30,
     "nombre": "Bryan González",
     "dorsal": 5,
     "foto": "images/bryangonzalez.jpg",
@@ -390,7 +390,7 @@
     "asistio": "Richy Ledezma"
   },
   {
-    "id": 28,
+    "id": 31,
     "nombre": "Omar Govea",
     "dorsal": 6,
     "foto": "images/omargovea.jpg",
@@ -403,7 +403,7 @@
     "asistio": "Efraín Álvarez"
   },
   {
-    "id": 29,
+    "id": 32,
     "nombre": "Santiago Sandoval",
     "dorsal": 226,
     "foto": "images/santiagosandoval.jpg",
@@ -416,7 +416,7 @@
     "asistio": null
   },
   {
-    "id": 30,
+    "id": 33,
     "nombre": "Armando González",
     "dorsal": 34,
     "foto": "images/armandogonzalez.jpg",
@@ -429,7 +429,7 @@
     "asistio": "Richy Ledezma"
   },
   {
-    "id": 30,
+    "id": 34,
     "nombre": "Samir Inda",
     "dorsal": 225,
     "foto": "images/samirinda.jpg",
@@ -440,6 +440,45 @@
     "minuto": "90+4",
     "tipo": "normal",
     "asistio": "Luis Romo"
+  },
+    {
+    "id": 35,
+    "nombre": "Armando González",
+    "dorsal": 34,
+    "foto": "images/armandogonzalez.jpg",
+    "partido": "Guadalajara vs Santos Laguna",
+    "estadio": "Akron",
+    "competencia": "Liga MX, Apertura",
+    "fecha": "14/03/2026",
+    "minuto": "12",
+    "tipo": "normal",
+    "asistio": null
+  },
+  {
+    "id": 36,
+    "nombre": "Armando González",
+    "dorsal": 34,
+    "foto": "images/armandogonzalez.jpg",
+    "partido": "Guadalajara vs Santos Laguna",
+    "estadio": "Akron",
+    "competencia": "Liga MX, Apertura",
+    "fecha": "14/03/2026",
+    "minuto": "31",
+    "tipo": "normal",
+    "asistio": "Richy Ledezma"
+  },
+  {
+    "id": 37,
+    "nombre": "Ricardo Marín",
+    "dorsal": 17,
+    "foto": "images/ricardomarin.jpg",
+    "partido": "Guadalajara vs Santos Laguna",
+    "estadio": "Akron",
+    "competencia": "Liga MX, Apertura",
+    "fecha": "14/03/2026",
+    "minuto": "90+2",
+    "tipo": "normal",
+    "asistio": "Bryan González"
   }
 
 ]

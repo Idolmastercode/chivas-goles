@@ -70,13 +70,14 @@ html, body {
 
 main {
   width: 100%;
-  max-width: 1400px; /* Limita el ancho en monitores ultra grandes */
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  padding: 0 15px;
-  flex-grow: 1; /* Esto empuja el footer hacia abajo */
+  flex-grow: 1; /* Esto es clave, empuja el footer hacia abajo perfecto */
+  display: flex;
+  flex-direction: column;
+  
+  /* ¡CERO MÁRGENES, CERO LÍMITES! */
+  margin: 0;
+  padding: 0;
+  max-width: none; 
 }
 
 .App-footer {
