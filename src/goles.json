@@ -479,6 +479,70 @@
     "minuto": "90+2",
     "tipo": "normal",
     "asistio": "Bryan González"
+  },
+  {
+    "id": 38,
+    "nombre": "Brian Gutiérrez",
+    "dorsal": 11,
+    "foto": "images/briangutierrez.jpg",
+    "partido": "Guadalajara vs León",
+    "estadio": "Akron",
+    "competencia": "Liga MX, Apertura",
+    "fecha": "18/03/2026",
+    "minuto": "36",
+    "tipo": "normal",
+    "asistio": "Daniel Aguirre"
+  },
+  {
+    "id": 39,
+    "nombre": "Santiago Sandoval",
+    "dorsal": 226,
+    "foto": "images/santiagosandoval.jpg",
+    "partido": "Guadalajara vs León",
+    "estadio": "Akron",
+    "competencia": "Liga MX, Apertura",
+    "fecha": "18/03/2026",
+    "minuto": "46",
+    "tipo": "normal",
+    "asistio": "Efraín Álvarez"
+  },
+    {
+    "id": 40,
+    "nombre": "Armando González",
+    "dorsal": 34,
+    "foto": "images/armandogonzalez.jpg",
+    "partido": "Guadalajara vs León",
+    "estadio": "Akron",
+    "competencia": "Liga MX, Apertura",
+    "fecha": "18/03/2026",
+    "minuto": "66",
+    "tipo": "PENAL",
+    "asistio": null
+  },
+    {
+    "id": 41,
+    "nombre": "Ángel Sepulveda",
+    "dorsal": 20,
+    "foto": "images/angelsepulveda.jpg",
+    "partido": "Guadalajara vs León",
+    "estadio": "Akron",
+    "competencia": "Liga MX, Apertura",
+    "fecha": "18/03/2026",
+    "minuto": "90",
+    "tipo": "normal",
+    "asistio": null
+  },
+    {
+    "id": 42,
+    "nombre": "Hugo Camberos",
+    "dorsal": 26,
+    "foto": "images/hugocamberos.jpg",
+    "partido": "Guadalajara vs León",
+    "estadio": "Akron",
+    "competencia": "Liga MX, Apertura",
+    "fecha": "18/03/2026",
+    "minuto": "90+9",
+    "tipo": "normal",
+    "asistio": null
   }
-
 ]
